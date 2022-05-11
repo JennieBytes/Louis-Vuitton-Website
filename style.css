@@ -1,57 +1,58 @@
-.nav {
-  padding: 2rem;
+nav{
+    padding:0 32px;
 }
 
-.btn-outline-success {
-  color: chocolate;
-  border-color: chocolate;
+.btn-outline-success{
+    color:chocolate;
+    border-color:chocolate;
 }
 
-.btn-outline-success:hover {
-  background-color: chocolate;
-  color: white;
-  border-color: chocolate;
+.btn-outline-success:hover{
+    background-color: chocolate;
+    color:white;
+    border-color:chocolate;
+
 }
 
-.first-line {
-  color: white;
-  border-bottom: 1px solid #392d23;
+footer{
+    background: #19110b;
+    color:white;
+    font-size:14px;
 }
 
-footer {
-  background: #19110b;
-  font-size: 14px;
-  color: white;
-}
-
-.flag {
-  color: white;
-}
-
-.col {
-  padding-bottom: 1rem;
-}
-
-.second-line a {
-  color: white;
-  text-decoration: none;
-}
-
-.third-line {
-  display: none;
-}
-
-@media screen and (max-width: 48rem) {
-  .first-line {
-    text-align: center;
-  }
-
-  .second-line {
-    padding: 0 2rem;
+.first-row{
     border-bottom: 1px solid #392d23;
-  }
+}
 
-  .third-line {
-    display: block;
-  }
+.second-row a{
+    color:white;
+    text-decoration:none;
+}
+
+.col{
+    padding-bottom:1rem;
+}
+
+.mobile-footer{
+    border-top: 1px solid #392d23;
+    display:none;
+}
+
+/* use media quary for individual componenet modifications */
+@media screen and (max-width:48rem){
+    .first-row{
+        text-align:center;
+    }
+
+    .second-row{
+        padding:0 2rem;
+    }
+
+    .mobile-footer{
+        display:block; /* turn display back to block (default)*/
+    }
+
+    .flag{
+        display:none;
+    }
 }
